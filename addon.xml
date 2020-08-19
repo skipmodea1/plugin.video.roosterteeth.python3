@@ -20,7 +20,7 @@
       <disclaimer lang="en_GB">For bugs, requests or general questions visit the Roosterteeth.com thread on the Kodi forum</disclaimer>
     <language>en</language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+	<license>GPL-2.0-or-later</license>
     <forum>https://forum.kodi.tv/showthread.php?tid=235071</forum>
     <website>https://roosterteeth.com</website>
     <source>https://github.com/skipmodea1/plugin.video.roosterteeth.python3</source>
