@@ -15,7 +15,7 @@ import xbmc
 import xbmcgui
 import xbmcplugin
 
-from roosterteeth_const import LANGUAGE, SETTINGS, HEADERS, convertToUnicodeString, log, VQ4K, VQ1080P, VQ720P, \
+from resources.lib.roosterteeth_const import LANGUAGE, SETTINGS, HEADERS, convertToUnicodeString, log, VQ4K, VQ1080P, VQ720P, \
     VQ480P, VQ360P, VQ240P, ROOSTERTEETH_AUTHORIZATION_URL, KODI_ROOSTERTEETH_ADDON_CLIENT_ID, INDEX_DOT_M3U8
 
 

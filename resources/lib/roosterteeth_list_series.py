@@ -16,7 +16,7 @@ import xbmcgui
 import xbmcplugin
 import json
 
-from roosterteeth_const import RESOURCES_PATH, HEADERS, LANGUAGE, convertToUnicodeString, log, \
+from resources.lib.roosterteeth_const import RESOURCES_PATH, HEADERS, LANGUAGE, convertToUnicodeString, log, \
     ROOSTERTEETH_SERIES_BASE_URL, ROOSTERTEETH_GET_EVERYTHING_IN_ONE_PAGE_URL_PART, ROOSTERTEETH_ORDER_URL_PART
 
 
