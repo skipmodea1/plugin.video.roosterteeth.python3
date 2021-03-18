@@ -294,7 +294,7 @@ class Main(object):
         if found_m3u8_url:
             # for some reason u0026 is present in the url, it should have been an ampersand
             # let's correct that
-            m3u8_url = m3u8_url.replace('u0026', '&')
+            m3u8_url = m3u8_url.replace('\u0026', '&')
 
             log("corrected m3u8_url", m3u8_url)
 
