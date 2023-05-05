@@ -109,8 +109,8 @@ class Main(object):
 
             log("must_login_first_member_user", must_login_first_member_user)
 
-            # login if needed
-            if must_login_first_member_user:
+            # RT now embeds ads in public streams, so we must always log in
+            #if must_login_first_member_user:
                 # is the first_member switch in the settings of this addon turned on?
                 if self.IS_FIRST_MEMBER == 'true':
                     # is it a first_member video or not?
@@ -210,28 +210,28 @@ class Main(object):
 
                             exit(1)
 
-                    except urllib.error.HTTPError as error:
+                except urllib.error.HTTPError as error:
 
-                        log("HTTPError1", error)
+                    log("HTTPError1", error)
 
-                        try:
-                            dialog_wait.close()
-                            del dialog_wait
-                        except:
-                            pass
-                        xbmcgui.Dialog().ok(LANGUAGE(30000), LANGUAGE(30106) % (convertToUnicodeString(error)))
-                        exit(1)
+                    try:
+                        dialog_wait.close()
+                        del dialog_wait
                     except:
-                        exception = sys.exc_info()[0]
+                        pass
+                    xbmcgui.Dialog().ok(LANGUAGE(30000), LANGUAGE(30106) % (convertToUnicodeString(error)))
+                    exit(1)
+                except:
+                    exception = sys.exc_info()[0]
 
-                        log("ExceptionError1", exception)
+                    log("ExceptionError1", exception)
 
-                        try:
-                            dialog_wait.close()
-                            del dialog_wait
-                        except:
-                            pass
-                        exit(1)
+                    try:
+                        dialog_wait.close()
+                        del dialog_wait
+                    except:
+                        pass
+                    exit(1)
 
                 else:
                     try:
